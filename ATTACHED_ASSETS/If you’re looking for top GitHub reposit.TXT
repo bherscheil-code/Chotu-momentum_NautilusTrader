@@ -1,0 +1,66 @@
+⭐ Popular GitHub Backtesting Libraries
+
+1. backtesting.py (Python)
+	•	Lightweight and intuitive Python framework for backtesting using candlestick data.
+	•	Offers a clean API, blazing-fast execution, interactive plots, built-in strategy optimizer, and support for various indicators.     
+	•	Recently updated (July 2025) and has a strong community (~7.1k stars).   
+https://github.com/kernc/backtesting.py
+2. vectorbt (Python)
+	•	High-performance engine for backtesting, analysis, and research with vectorized operations.
+	•	Excellent for strategy optimization, time-series analysis, and quantitative research.   
+https://github.com/polakowo/vectorbt
+3. StockSharp (S#) (C#)
+	•	A full open-source platform for developing trading robots across stocks, forex, crypto, and options.
+	•	Provides backtesting, market simulation, and real execution capabilities.   
+https://github.com/StockSharp/StockSharp
+4. QSTrader (Python)
+	•	Modular, schedule-driven backtesting framework tailored for equities and ETFs.
+	•	Supports end-to-end systematic trading with customizable modules. Actively maintained; MIT licensed.   
+https://github.com/mhallsmoore/qstrader
+5. Lumibot (Python)
+	•	Allows using the same code for backtesting and live trading across asset classes (stocks, options, crypto, futures, forex).
+	•	Designed for flexibility and speed; GPL-3.0 licensed.   
+https://github.com/Lumiwealth/lumibot
+6. NautilusTrader (Rust + Python)
+	•	Production-grade, high-performance, event-driven platform for backtesting and live deployment.
+	•	Rust core ensures speed and reliability; modular adapters for various asset classes.   
+https://github.com/0a1b/momentum_NautilusTrader
+https://github.com/nautechsystems/nautilus_data
+https://github.com/daviddwlee84/NautilusTraderExample
+7. stock-analysis-engine (Python + Jupyter)
+	•	Enables scalable, minute-by-minute backtesting using real-time data from IEX, Tradier, and FinViz.
+	•	Built for large-scale AI training and backtest automation via Kubernetes or Docker.   
+https://github.com/AlgoTraders/stock-analysis-engine
+8. FinRL (Python, DRL-based)
+	•	Library for deep reinforcement learning—streamlines backtesting across stock, portfolio, and multi-asset environments.
+	•	Provides modular architecture, tutorials, and support for advanced DRL algorithms.   
+	•	FinRL-Meta offers simulated market environments and benchmarks for reproducible research.   
+https://github.com/AI4Finance-Foundation/FinRL
+⸻
+
+Summary Comparison
+
+Use Case	Recommended Tools
+Lightweight & easy setup	backtesting.py, vectorbt
+Full systematic/backtest workflow	QSTrader, stock-analysis-engine
+Live deploy from same codebase	Lumibot, NautilusTrader
+High-performance engines	vectorbt, NautilusTrader
+Advanced DRL & AI experimentation	FinRL, FinRL-Meta
+Cross-language (C# ecosystem)	StockSharp
+⸻
+
+
+Recommendation Strategy
+	•	If you’re starting out with Python and want something simple and effective:
+Start with backtesting.py—it’s well-documented, fast, and ideal for candlestick-based strategies.
+	•	For advanced backtests or research-heavy needs with speed:
+Try vectorbt for its vectorized performance and research tools.
+	•	Want modularity for systematic strategies?
+Explore QSTrader.
+	•	Seamless move from backtesting to live trading:
+Use Lumibot (Python) or NautilusTrader (Rust + Python) depending on your performance needs.
+	•	Building AI/DRL trading agents?
+FinRL and FinRL-Meta offer powerful frameworks and benchmarks.
+	•	Prefer C#/.NET environment?
+StockSharp is a mature, well-rounded platform.
+
