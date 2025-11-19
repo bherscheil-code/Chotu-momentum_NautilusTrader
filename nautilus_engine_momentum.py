@@ -10,23 +10,14 @@ Note: The engine API is largely C-extension based; configuration is kept minimal
 """
 from __future__ import annotations
 
-import warnings
-from dataclasses import dataclass
-from typing import Dict, List
 
 import numpy as np
 import pandas as pd
 
 from nautilus_trader.trading.strategy import Strategy, StrategyConfig
-from nautilus_trader.backtest.engine import BacktestEngine, BacktestEngineConfig
 from nautilus_trader.model.identifiers import InstrumentId
-from nautilus_trader.model.instruments.equity import Equity
 from nautilus_trader.model.data import Bar, BarType
-from nautilus_trader.model.enums import BarAggregation, AggregationSource, PriceType
-from nautilus_trader.cache.config import CacheConfig
-from nautilus_trader.data.config import DataEngineConfig
-from nautilus_trader.risk.config import RiskEngineConfig
-from nautilus_trader.execution.config import ExecEngineConfig
+from nautilus_trader.model.enums import PriceType
 
 
 class MomentumConfig(StrategyConfig, frozen=True):

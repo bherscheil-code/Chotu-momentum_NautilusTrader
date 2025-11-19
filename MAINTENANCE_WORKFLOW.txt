@@ -1,0 +1,186 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                  CHOTU-MOMENTUM MAINTENANCE WORKFLOW                         ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                              BEFORE YOU START                                │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+    Run Prerequisites Check:
+    
+    ┌──────────────────────────────┐
+    │  python test_maintenance.py  │
+    └──────────────────────────────┘
+              │
+              ├─→ ✅ All OK? → Continue to maintenance
+              └─→ ❌ Issues? → Install missing dependencies
+
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                          MAINTENANCE PIPELINE                                │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+    Choose Your Script:
+    
+    ┌────────────────────────────┐     ┌──────────────────────────────────┐
+    │  Windows Users             │     │  Cross-Platform Users            │
+    │                            │     │                                  │
+    │  maintain-chotu-          │     │  python maintain_chotu_         │
+    │  momentum.bat              │     │  momentum.py                     │
+    └────────────────────────────┘     └──────────────────────────────────┘
+              │                                    │
+              └────────────────┬───────────────────┘
+                               │
+                               ▼
+    
+    ╔═══════════════════════════════════════════════════════════════════════╗
+    ║                         STEP 1: UPDATE                                ║
+    ║  ┌─────────────────────────────────────────────────────────────────┐ ║
+    ║  │  git checkout main/master                                       │ ║
+    ║  │  git pull --ff-only                                             │ ║
+    ║  └─────────────────────────────────────────────────────────────────┘ ║
+    ║  Time: ~5 seconds                                                     ║
+    ╚═══════════════════════════════════════════════════════════════════════╝
+                               │
+                               ▼
+    
+    ╔═══════════════════════════════════════════════════════════════════════╗
+    ║                    STEP 2: OPTIMIZE & DEBUG                           ║
+    ║  ┌─────────────────────────────────────────────────────────────────┐ ║
+    ║  │  black *.py          # Format code                              │ ║
+    ║  │  isort *.py          # Sort imports                             │ ║
+    ║  │  ruff check --fix    # Lint and auto-fix                        │ ║
+    ║  └─────────────────────────────────────────────────────────────────┘ ║
+    ║  Time: ~10 seconds                                                    ║
+    ╚═══════════════════════════════════════════════════════════════════════╝
+                               │
+                               ▼
+    
+    ╔═══════════════════════════════════════════════════════════════════════╗
+    ║                    STEP 3: MAKE DEPLOYABLE                            ║
+    ║  ┌─────────────────────────────────────────────────────────────────┐ ║
+    ║  │  pip install --upgrade pip                                      │ ║
+    ║  │  pip install -r requirements.txt                                │ ║
+    ║  │  Verify: nautilus-trader, yfinance, pandas, numpy              │ ║
+    ║  └─────────────────────────────────────────────────────────────────┘ ║
+    ║  Time: ~30 seconds (first run), ~10 seconds (subsequent)             ║
+    ╚═══════════════════════════════════════════════════════════════════════╝
+                               │
+                               ▼
+    
+    ╔═══════════════════════════════════════════════════════════════════════╗
+    ║                       STEP 4: TEST RUN                                ║
+    ║  ┌─────────────────────────────────────────────────────────────────┐ ║
+    ║  │  Test: momentum_walkforward_core.py imports                     │ ║
+    ║  │  Test: nautilus_engine_momentum.py imports                      │ ║
+    ║  │  Test: Yahoo Finance data connectivity                          │ ║
+    ║  └─────────────────────────────────────────────────────────────────┘ ║
+    ║  Time: ~15 seconds                                                    ║
+    ╚═══════════════════════════════════════════════════════════════════════╝
+                               │
+                               ▼
+    
+    ╔═══════════════════════════════════════════════════════════════════════╗
+    ║                     STEP 5: REMOVE CACHE                              ║
+    ║  ┌─────────────────────────────────────────────────────────────────┐ ║
+    ║  │  Remove: __pycache__/                                           │ ║
+    ║  │  Remove: *.pyc, *.pyo                                           │ ║
+    ║  │  Remove: .pytest_cache, .mypy_cache, .ruff_cache               │ ║
+    ║  │  Remove: .ipynb_checkpoints                                     │ ║
+    ║  └─────────────────────────────────────────────────────────────────┘ ║
+    ║  Time: ~5 seconds                                                     ║
+    ╚═══════════════════════════════════════════════════════════════════════╝
+                               │
+                               ▼
+    
+    ╔═══════════════════════════════════════════════════════════════════════╗
+    ║                         STEP 6: PUSH                                  ║
+    ║  ┌─────────────────────────────────────────────────────────────────┐ ║
+    ║  │  git add .                                                      │ ║
+    ║  │  git commit -m "chore(momentum): optimized [timestamp]"        │ ║
+    ║  │  git push origin main/master                                    │ ║
+    ║  └─────────────────────────────────────────────────────────────────┘ ║
+    ║  Time: ~10 seconds                                                    ║
+    ╚═══════════════════════════════════════════════════════════════════════╝
+                               │
+                               ▼
+    
+    ┌─────────────────────────────────────────────────────────────────────┐
+    │                         ✨ COMPLETE! ✨                              │
+    │                                                                       │
+    │  Your project is now:                                                │
+    │    ✅ Up-to-date with remote                                         │
+    │    ✅ Formatted and linted                                           │
+    │    ✅ Dependencies verified                                          │
+    │    ✅ Modules validated                                              │
+    │    ✅ Caches cleared                                                 │
+    │    ✅ Changes committed and pushed                                   │
+    │                                                                       │
+    │  Total Time: ~75 seconds                                             │
+    └─────────────────────────────────────────────────────────────────────┘
+
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                            AUTOMATION OPTIONS                                │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+    ┌──────────────────────┐    ┌──────────────────────┐    ┌─────────────────┐
+    │  Windows Task        │    │  Linux/macOS Cron    │    │  GitHub Actions │
+    │  Scheduler           │    │                      │    │                 │
+    │                      │    │  0 2 * * *           │    │  on: schedule   │
+    │  Daily at 2 AM       │    │  python3 script.py   │    │    cron: '0 2'  │
+    └──────────────────────┘    └──────────────────────┘    └─────────────────┘
+
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                          TROUBLESHOOTING FLOW                                │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+    Script fails?
+         │
+         ├─→ Git conflicts?
+         │        └─→ git stash → run script → git stash pop
+         │
+         ├─→ Dependencies missing?
+         │        └─→ pip install -r requirements.txt
+         │
+         ├─→ Push failed?
+         │        └─→ Check: git remote -v, git config --list
+         │
+         └─→ Other issues?
+                  └─→ See MAINTENANCE_GUIDE.md
+
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                            QUICK REFERENCE                                   │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+    Files Created:
+    ├── maintain-chotu-momentum.bat      (Windows batch script)
+    ├── maintain_chotu_momentum.py       (Cross-platform Python)
+    ├── test_maintenance.py              (Prerequisites checker)
+    ├── MAINTENANCE_GUIDE.md             (Full documentation)
+    ├── QUICK_MAINTENANCE.md             (Quick reference)
+    ├── MAINTENANCE_SCRIPTS_SUMMARY.md   (Delivery summary)
+    └── MAINTENANCE_WORKFLOW.txt         (This file)
+
+    Documentation:
+    ├── MAINTENANCE_GUIDE.md             (Read first - comprehensive)
+    ├── QUICK_MAINTENANCE.md             (Quick commands)
+    └── MAINTENANCE_SCRIPTS_SUMMARY.md   (Overview)
+
+    Commands:
+    ├── test_maintenance.py              (Check prerequisites)
+    ├── maintain-chotu-momentum.bat      (Windows - one-click)
+    └── maintain_chotu_momentum.py       (Cross-platform)
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                              NEED HELP?                                      ║
+║                                                                              ║
+║  Quick Start:    QUICK_MAINTENANCE.md                                       ║
+║  Full Guide:     MAINTENANCE_GUIDE.md                                       ║
+║  Troubleshoot:   MAINTENANCE_GUIDE.md → Troubleshooting section            ║
+║  Customize:      MAINTENANCE_GUIDE.md → Customization section              ║
+║  Automate:       MAINTENANCE_GUIDE.md → Automation section                 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
