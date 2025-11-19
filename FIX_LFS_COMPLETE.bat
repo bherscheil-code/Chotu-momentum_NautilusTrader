@@ -36,7 +36,7 @@ echo.
 
 REM Step 4: Remove cached parquet files
 echo [4/7] Removing cached parquet files...
-git rm -r --cached "nautilus_data-main/bench_data/*.parquet"
+git rm -r --cached "nautilus_data-main/bench_data/multi_stream_data/*.parquet" 2>nul
 if %errorlevel% neq 0 (
     echo WARNING: Some files may not exist in cache, continuing...
 )
@@ -44,11 +44,9 @@ echo.
 
 REM Step 5: Re-add parquet files
 echo [5/7] Re-adding parquet files with LFS...
-git add "nautilus_data-main/bench_data/*.parquet"
+git add "nautilus_data-main/bench_data/multi_stream_data/*.parquet" 2>nul
 if %errorlevel% neq 0 (
-    echo ERROR: Failed to add parquet files
-    pause
-    exit /b 1
+    echo WARNING: No parquet files found to add, continuing...
 )
 echo.
 
