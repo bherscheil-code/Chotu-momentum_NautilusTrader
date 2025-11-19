@@ -317,31 +317,6 @@ pip install -r requirements_nautilus.txt
 python -c "import nautilus_trader; print('NautilusTrader ready')"
 ```
 
-## 🔧 Automated Maintenance
-
-Keep your project optimized with automated maintenance scripts:
-
-```bash
-# Windows - One-click maintenance
-maintain-chotu-momentum.bat
-
-# Cross-platform Python version
-python maintain_chotu_momentum.py
-
-# Test prerequisites first
-python test_maintenance.py
-```
-
-**What it does:**
-- Updates code from Git
-- Formats and lints Python files
-- Installs/updates dependencies
-- Validates core modules
-- Clears caches
-- Commits and pushes changes
-
-See `MAINTENANCE_GUIDE.md` for detailed documentation.
-
 ## 🚦 Quick Start Guide
 
 ### 1. Single Backtest (Beginner)

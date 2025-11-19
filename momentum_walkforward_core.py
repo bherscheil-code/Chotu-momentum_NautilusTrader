@@ -10,8 +10,10 @@ from __future__ import annotations
 import os
 import sys
 import math
+import datetime as dt
 from typing import List, Dict, Tuple, Optional
 
+import numpy as np
 import pandas as pd
 import yfinance as yf
 import matplotlib.pyplot as plt
@@ -167,6 +169,7 @@ def run_engine_for_close(
         bars.sort(key=lambda b: b.ts_event)
         engine.add_data(bars)
 
+        import io
         import os
         # More aggressive output suppression - redirect to null device
         null_fd = os.open(os.devnull, os.O_WRONLY)
