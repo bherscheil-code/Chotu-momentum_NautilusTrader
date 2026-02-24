@@ -1,13 +1,42 @@
 # 📚 Stock Learning Hub - Complete Educational Platform
 
+<div align="center">
+
 > **Dad's Gift: Learn stock investment through interactive tools built from proven strategies**
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io)
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-green.svg)
 ![Integration](https://img.shields.io/badge/Integration-97%25-brightgreen.svg)
+![License](https://img.shields.io/badge/License-Educational-yellow.svg)
+![Modules](https://img.shields.io/badge/Modules-9%20Active-blue.svg)
+![Strategies](https://img.shields.io/badge/Strategies-4%20Professional-purple.svg)
+![Indicators](https://img.shields.io/badge/Indicators-12+-orange.svg)
 
-**🔗 Live Demo:** [Deploy on Streamlit Cloud](https://share.streamlit.io)
+**🚀 [Deploy on Streamlit Cloud](https://share.streamlit.io) | 📖 [Documentation](DEPLOYMENT_GUIDE.md) | 🎬 [Video Tutorial](VIDEO_GUIDE.md)**
+
+</div>
+
+---
+
+## 🌟 Why This Platform?
+
+<table>
+<tr>
+<td width="33%" align="center">
+<h3>🎓 Learn Safely</h3>
+<p>No real money needed<br>Practice with confidence<br>Build knowledge step-by-step</p>
+</td>
+<td width="33%" align="center">
+<h3>💼 Professional Tools</h3>
+<p>4 proven strategies<br>12+ technical indicators<br>Real-time market data</p>
+</td>
+<td width="33%" align="center">
+<h3>🌍 Access Anywhere</h3>
+<p>Works on any device<br>No installation needed<br>Free forever</p>
+</td>
+</tr>
+</table>
 
 ---
 
@@ -15,21 +44,69 @@
 
 An educational platform combining **3 years of trading research** and **4 different projects** into one simple app for learning stock investment safely.
 
+<div align="center">
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    INTEGRATION STATUS                       │
+├─────────────────────────────────────────────────────────────┤
+│  Chotu-qstrader              ████████████████░░  95%  ✅   │
+│  Chotu-stock-analysis        ████████████████████ 100% ✅   │
+│  Root momentum files         ████████████████░░  95%  ✅   │
+│                                                             │
+│  OVERALL INTEGRATION:        ████████████████░░  97%  ✅   │
+└─────────────────────────────────────────────────────────────┘
+```
+
+</div>
+
 ### ✨ Features
 
-- 📖 **9 Interactive Modules** - Learn by doing, not just reading
-- 🎯 **4 Professional Strategies** - From proven backtests
-- 📈 **12+ Technical Indicators** - Industry-standard analysis
-- 📚 **Built-in User Manual** - Complete help system
-- 📊 **Real-time Market Data** - Analyze actual stocks
-- ⚔️ **Strategy Comparison** - See what works best
-- 🎮 **Safe Practice** - No real money needed
+<div align="center">
+
+| Feature | Description | Status |
+|---------|-------------|--------|
+| 📖 **9 Interactive Modules** | Learn by doing, not just reading | ✅ Active |
+| 🎯 **4 Professional Strategies** | From proven backtests | ✅ Active |
+| 📈 **12+ Technical Indicators** | Industry-standard analysis | ✅ Active |
+| 📚 **Built-in User Manual** | Complete help system (6 sections, 20+ FAQs) | ✅ Active |
+| 📊 **Real-time Market Data** | Analyze actual stocks via Yahoo Finance | ✅ Active |
+| ⚔️ **Strategy Comparison** | See what works best | ✅ Active |
+| 🎮 **Safe Practice** | No real money needed | ✅ Active |
+| 🎬 **Video Tutorial** | Complete guide included | ✅ Available |
+| 🌍 **Mobile Friendly** | Works on any device | ✅ Responsive |
+
+</div>
 
 ---
 
 ## ⚡ Quick Start (3 Steps)
 
-### Option 1: Run Locally (30 seconds)
+<div align="center">
+
+### 🚀 Deploy to Cloud (Recommended - 5 minutes)
+
+```mermaid
+graph LR
+    A[Fork Repo] --> B[Go to share.streamlit.io]
+    B --> C[Sign in with GitHub]
+    C --> D[New App]
+    D --> E[Select Repo]
+    E --> F[Deploy!]
+    F --> G[🎉 Live in 2-3 min]
+```
+
+</div>
+
+**Step 1:** Fork this repository
+**Step 2:** Go to [share.streamlit.io](https://share.streamlit.io)
+**Step 3:** Deploy with main file: `Stock-Learning-Hub/app.py`
+
+**✨ Your app will be live in 2-3 minutes!**
+
+---
+
+### 💻 Run Locally (30 seconds)
 
 ```bash
 # Windows
@@ -43,6 +120,18 @@ chmod +x run.sh
 ```
 
 **Opens at:** http://localhost:8501
+
+---
+
+<div align="center">
+
+### ⭐ If you find this helpful, please star this repository! ⭐
+
+[![Star History Chart](https://api.star-history.com/svg?repos=CRAJKUMARSINGH/Chotu-momentum_NautilusTrader&type=Date)](https://star-history.com/#CRAJKUMARSINGH/Chotu-momentum_NautilusTrader&Date)
+
+</div>
+
+---
 
 ### Option 2: Deploy to Cloud (5 minutes)
 
@@ -59,6 +148,21 @@ chmod +x run.sh
 ---
 
 ## 📖 What You'll Learn
+
+<div align="center">
+
+```
+┌──────────────┐     ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
+│   WEEK 1     │────▶│   WEEK 2     │────▶│   WEEK 3     │────▶│   WEEK 4     │
+│  Foundation  │     │  Technical   │     │  Strategies  │     │   Mastery    │
+└──────────────┘     └──────────────┘     └──────────────┘     └──────────────┘
+   • Basics            • 12+ Indicators     • 4 Strategies       • Comparison
+   • Momentum          • Multi-signals      • Parameters         • Optimization
+   • Risk Mgmt         • Chart Reading      • Backtesting        • Variations
+   • Metrics           • Buy/Sell           • Performance        • Advanced
+```
+
+</div>
 
 ### Week 1: Foundation
 - Stock market basics
@@ -90,6 +194,20 @@ chmod +x run.sh
 
 ## 🚀 4 Professional Strategies
 
+<div align="center">
+
+| Strategy | Source | Method | Best For | Status |
+|----------|--------|--------|----------|--------|
+| **Top-N Momentum TAA** | Chotu-qstrader | Selects top 3 by momentum | Bull markets, trending stocks | ✅ |
+| **60/40 Portfolio** | Chotu-qstrader | 60% stocks, 40% bonds | Balanced, lower risk | ✅ |
+| **ROC × Trend Slope** | NautilusTrader | Advanced momentum formula | Strong trends, systematic | ✅ |
+| **Indicator-Based** | Stock-analysis-engine | RSI, MACD, Moving Averages | Technical analysis, signals | ✅ |
+
+</div>
+
+<details>
+<summary><b>📊 Click to see detailed strategy descriptions</b></summary>
+
 ### 1. Top-N Momentum TAA
 - **Source:** Chotu-qstrader project
 - **Method:** Selects top 3 stocks by momentum
@@ -110,11 +228,30 @@ chmod +x run.sh
 - **Method:** Uses RSI, MACD, Moving Averages
 - **Best For:** Technical analysis, multiple signals
 
+</details>
+
 ---
 
 ## 📈 12+ Technical Indicators
 
+<div align="center">
+
 **Complete integration from Chotu-stock-analysis-engine:**
+
+| Category | Indicators | Purpose |
+|----------|-----------|---------|
+| **Momentum** | RSI, Stochastic, Williams %R, ROC | Identify overbought/oversold |
+| **Trend** | MACD, ADX, Moving Averages | Determine trend direction |
+| **Volatility** | Bollinger Bands, ATR, True Range | Measure price volatility |
+| **Volume** | OBV, MFI | Analyze volume trends |
+| **Oscillators** | CCI | Identify cyclical trends |
+
+**Plus:** Multi-indicator signal generation with customizable thresholds!
+
+</div>
+
+<details>
+<summary><b>📊 Click to see all indicators</b></summary>
 
 - RSI (Relative Strength Index)
 - MACD (Moving Average Convergence Divergence)
@@ -129,7 +266,27 @@ chmod +x run.sh
 - MFI (Money Flow Index)
 - True Range
 
-**Plus:** Multi-indicator signal generation with customizable thresholds!
+</details>
+
+---
+
+## 🎬 Demo & Screenshots
+
+<div align="center">
+
+### 📺 Watch the Tutorial
+
+**Video Guide Available:** Check out the [complete video script](VIDEO_GUIDE.md) to see all features!
+
+### 📸 Platform Flow
+
+```
+🏠 Home → 📖 Learn → 🎯 Calculate → 📊 Analyze → 📈 Technical → 🚀 Strategies → ⚔️ Compare → 📚 Help
+```
+
+**Try it yourself:** Deploy in 5 minutes and explore all 9 modules!
+
+</div>
 
 ---
 
